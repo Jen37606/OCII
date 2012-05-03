@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ShapeClass.h"
 
 @implementation ViewController
 
@@ -20,6 +21,15 @@
 
 - (void)viewDidLoad
 {
+    shapeClass = [[ShapeClass alloc] init];
+    if(shapeClass != nil)
+    {
+    
+    }
+    
+    labelText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    [self.view addSubview:labelText];
+    labelText.text = @"hello";
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

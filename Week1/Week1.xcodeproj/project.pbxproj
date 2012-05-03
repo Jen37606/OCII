@@ -16,6 +16,7 @@
 		9ABA57E11550D70B006B71A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57E01550D70B006B71A8 /* ViewController.m */; };
 		9ABA57E41550D70B006B71A8 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA57E21550D70B006B71A8 /* ViewController_iPhone.xib */; };
 		9ABA57E71550D70B006B71A8 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA57E51550D70B006B71A8 /* ViewController_iPad.xib */; };
+		9ABA57EF15531235006B71A8 /* ShapeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57EE15531235006B71A8 /* ShapeClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		9ABA57E01550D70B006B71A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9ABA57E31550D70B006B71A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		9ABA57E61550D70B006B71A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		9ABA57ED15531235006B71A8 /* ShapeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeClass.h; sourceTree = "<group>"; };
+		9ABA57EE15531235006B71A8 /* ShapeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				9ABA57E21550D70B006B71A8 /* ViewController_iPhone.xib */,
 				9ABA57E51550D70B006B71A8 /* ViewController_iPad.xib */,
 				9ABA57D41550D70B006B71A8 /* Supporting Files */,
+				9ABA57ED15531235006B71A8 /* ShapeClass.h */,
+				9ABA57EE15531235006B71A8 /* ShapeClass.m */,
 			);
 			path = Week1;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				9ABA57DA1550D70B006B71A8 /* main.m in Sources */,
 				9ABA57DE1550D70B006B71A8 /* AppDelegate.m in Sources */,
 				9ABA57E11550D70B006B71A8 /* ViewController.m in Sources */,
+				9ABA57EF15531235006B71A8 /* ShapeClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

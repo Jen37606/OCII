@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class ShapeClass;
 
+@interface ViewController : UIViewController
+{
+    UILabel *labelText;
+    ShapeClass *shapeClass;
+}
 @end
