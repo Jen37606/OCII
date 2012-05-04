@@ -19,6 +19,8 @@
 		9ABA57EF15531235006B71A8 /* ShapeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57EE15531235006B71A8 /* ShapeClass.m */; };
 		9ABA57F515536A48006B71A8 /* TriangleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57F415536A48006B71A8 /* TriangleClass.m */; };
 		9ABA57F815536C05006B71A8 /* SquareClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57F715536C05006B71A8 /* SquareClass.m */; };
+		9ABA57FB15536CFE006B71A8 /* RectangleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57FA15536CFE006B71A8 /* RectangleClass.m */; };
+		9ABA57FE15536DC7006B71A8 /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA57FD15536DC7006B71A8 /* ShapeFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		9ABA57F415536A48006B71A8 /* TriangleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleClass.m; sourceTree = "<group>"; };
 		9ABA57F615536C05006B71A8 /* SquareClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareClass.h; sourceTree = "<group>"; };
 		9ABA57F715536C05006B71A8 /* SquareClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareClass.m; sourceTree = "<group>"; };
+		9ABA57F915536CFE006B71A8 /* RectangleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleClass.h; sourceTree = "<group>"; };
+		9ABA57FA15536CFE006B71A8 /* RectangleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleClass.m; sourceTree = "<group>"; };
+		9ABA57FC15536DC7006B71A8 /* ShapeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		9ABA57FD15536DC7006B71A8 /* ShapeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 				9ABA57F415536A48006B71A8 /* TriangleClass.m */,
 				9ABA57F615536C05006B71A8 /* SquareClass.h */,
 				9ABA57F715536C05006B71A8 /* SquareClass.m */,
+				9ABA57F915536CFE006B71A8 /* RectangleClass.h */,
+				9ABA57FA15536CFE006B71A8 /* RectangleClass.m */,
+				9ABA57FC15536DC7006B71A8 /* ShapeFactory.h */,
+				9ABA57FD15536DC7006B71A8 /* ShapeFactory.m */,
 			);
 			path = Week1;
 			sourceTree = "<group>";
@@ -185,6 +195,8 @@
 				9ABA57EF15531235006B71A8 /* ShapeClass.m in Sources */,
 				9ABA57F515536A48006B71A8 /* TriangleClass.m in Sources */,
 				9ABA57F815536C05006B71A8 /* SquareClass.m in Sources */,
+				9ABA57FB15536CFE006B71A8 /* RectangleClass.m in Sources */,
+				9ABA57FE15536DC7006B71A8 /* ShapeFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
