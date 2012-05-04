@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ShapeClass.h"
 
 @interface ShapeFactory : NSObject
+
++(ShapeClass*)CreateShape:(NSInteger)type;
 
 @end
