@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "ShapeClass.h"
+#import "SquareClass.h"
+#import "TriangleClass.h"
+#import "RectangleClass.h"
+#import "ShapeFactory.h"
 
 @implementation ViewController
 
@@ -21,16 +25,48 @@
 
 - (void)viewDidLoad
 {
-    shapeClass = [[ShapeClass alloc] init];
-    if(shapeClass != nil)
-    {
+
+    //Triangle
     
-    }
+    TriangleClass *triangle = (TriangleClass*)[ShapeFactory CreateShape:0];
+    [triangle GetArea];
+    textOne = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 50.0f, 300.0f, 20.0f)];
+    if(textOne != nil)
+        {
+            textOne.backgroundColor = [UIColor clearColor];
+            textOne.text = [NSString stringWithFormat:@"Shape %@ Area: %d",[triangle GetName],[triangle GetArea]];
+        }
+    [self.view addSubview:textOne];
+       
+        
+        
+    //Square
     
-    textOne = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    [self.view addSubview:textOne];
-    textOne.text = [shapeClass getText];
-    [self.view addSubview:textOne];
+    SquareClass *square = (SquareClass*)[ShapeFactory CreateShape:1];
+    [square GetArea];
+    textTwo = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 300.0f, 20.0f)];
+    if(textTwo != nil)
+        {
+            textTwo.backgroundColor = [UIColor clearColor];
+            textTwo.text = [NSString stringWithFormat:@"Shape %@ Area: %d",[square GetName],[square GetArea]];
+        }
+    [self.view addSubview:textTwo];
+
+
+
+    //Rectangle
+    
+    RectangleClass *rectangle = (RectangleClass*)[ShapeFactory CreateShape:2];
+    [rectangle GetArea];
+    textThree = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 150.0f, 300.0f, 20.0f)];
+    if(textThree != nil)
+        {
+            textThree.backgroundColor = [UIColor clearColor];
+            textThree.text = [NSString stringWithFormat:@"Shape %@ Area: %d",[rectangle GetName],[rectangle GetArea]];
+        }
+    [self.view addSubview:textThree];
+    
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
