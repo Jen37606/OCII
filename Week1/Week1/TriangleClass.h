@@ -1,5 +1,5 @@
 //
-//  ShapeClass.h
+//  TriangleClass.h
 //  Week1
 //
 //  Created by Jennifer Johnson on 5/3/12.
@@ -7,16 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ShapeClass.h"
 
-@interface ShapeClass : NSObject
-{
-@protected
-    NSString *name;
-    int numSides;
-}
+@interface TriangleClass : ShapeClass
 
--(int)GetNumSides;
--(NSString*)GetName;
 -(int)GetArea;
 
 @end

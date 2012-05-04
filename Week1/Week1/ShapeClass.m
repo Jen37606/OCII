@@ -14,8 +14,38 @@
     self = [super init];
     if(self != nil)
     {
-        // any init for this object
+        
     }
     return self;
 }
+
+-(int)GetArea
+{
+    return 0;
+}
+
+-(int)GetNumSides
+{
+    return numSides;
+}
+
+-(NSString*)GetName
+{
+    return name;
+}
+
+
+/*
+ -(NSString*)getText
+{
+    name = [NSString stringWithFormat:@"numSides = %d, test = %f", numSides, testnum];
+    if (name != nil)
+    {
+        return name;
+    }
+    return nil;
+    return @"text from ShapeClass";
+}
+ */
+
 @end

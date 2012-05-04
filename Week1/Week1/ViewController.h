@@ -12,7 +12,12 @@
 
 @interface ViewController : UIViewController
 {
-    UILabel *labelText;
+    UILabel *textOne;
+    UILabel *textTwo;
+    UILabel *textThree;
+    
     ShapeClass *shapeClass;
 }
+
+-(NSString*)getText;
 @end

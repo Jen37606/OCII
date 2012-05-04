@@ -27,12 +27,20 @@
     
     }
     
-    labelText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    [self.view addSubview:labelText];
-    labelText.text = @"hello";
+    textOne = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    [self.view addSubview:textOne];
+    textOne.text = [shapeClass getText];
+    [self.view addSubview:textOne];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+-(NSString*)getText
+{
+    return @"hi there";
+}
+
 
 - (void)viewDidUnload
 {
