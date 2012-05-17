@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol AddEventScreenDelegate <NSObject>
+@required
+-(void)DidEnd:(NSString*)inputString;
+
+@end
+
 @interface AddEventScreen : UIViewController
 
 @end

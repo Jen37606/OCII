@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEventScreen.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddEventScreenDelegate>
+{
+    IBOutlet UITextView *eventText;
+    NSMutableArray *eventArray;
+}
+
+-(IBAction)onClick:(id)sender;
 
 @end
