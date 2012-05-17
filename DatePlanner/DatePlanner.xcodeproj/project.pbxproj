@@ -18,8 +18,6 @@
 		9AA9EE2E1565BC9C002FF7DE /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE2C1565BC9C002FF7DE /* ViewController_iPad.xib */; };
 		9AA9EE351565BF35002FF7DE /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE341565BF35002FF7DE /* AddEvent.xib */; };
 		9AA9EE381565BF59002FF7DE /* AddEventScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EE371565BF59002FF7DE /* AddEventScreen.m */; };
-		9AA9EE3A1565BF79002FF7DE /* FilledInEvents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE391565BF79002FF7DE /* FilledInEvents.xib */; };
-		9AA9EE3D1565BF92002FF7DE /* FilledInEventsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EE3C1565BF92002FF7DE /* FilledInEventsScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +38,6 @@
 		9AA9EE341565BF35002FF7DE /* AddEvent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
 		9AA9EE361565BF59002FF7DE /* AddEventScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventScreen.h; sourceTree = "<group>"; };
 		9AA9EE371565BF59002FF7DE /* AddEventScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventScreen.m; sourceTree = "<group>"; };
-		9AA9EE391565BF79002FF7DE /* FilledInEvents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilledInEvents.xib; sourceTree = "<group>"; };
-		9AA9EE3B1565BF92002FF7DE /* FilledInEventsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilledInEventsScreen.h; sourceTree = "<group>"; };
-		9AA9EE3C1565BF92002FF7DE /* FilledInEventsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilledInEventsScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +94,6 @@
 				9AA9EE361565BF59002FF7DE /* AddEventScreen.h */,
 				9AA9EE371565BF59002FF7DE /* AddEventScreen.m */,
 				9AA9EE341565BF35002FF7DE /* AddEvent.xib */,
-				9AA9EE3B1565BF92002FF7DE /* FilledInEventsScreen.h */,
-				9AA9EE3C1565BF92002FF7DE /* FilledInEventsScreen.m */,
-				9AA9EE391565BF79002FF7DE /* FilledInEvents.xib */,
 			);
 			path = DatePlanner;
 			sourceTree = "<group>";
@@ -171,7 +163,6 @@
 				9AA9EE2B1565BC9C002FF7DE /* ViewController_iPhone.xib in Resources */,
 				9AA9EE2E1565BC9C002FF7DE /* ViewController_iPad.xib in Resources */,
 				9AA9EE351565BF35002FF7DE /* AddEvent.xib in Resources */,
-				9AA9EE3A1565BF79002FF7DE /* FilledInEvents.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +177,6 @@
 				9AA9EE251565BC9B002FF7DE /* AppDelegate.m in Sources */,
 				9AA9EE281565BC9B002FF7DE /* ViewController.m in Sources */,
 				9AA9EE381565BF59002FF7DE /* AddEventScreen.m in Sources */,
-				9AA9EE3D1565BF92002FF7DE /* FilledInEventsScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
