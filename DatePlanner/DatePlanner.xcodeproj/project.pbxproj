@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AA9EE151565BC9A002FF7DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA9EE141565BC9A002FF7DE /* UIKit.framework */; };
+		9AA9EE171565BC9A002FF7DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA9EE161565BC9A002FF7DE /* Foundation.framework */; };
+		9AA9EE191565BC9A002FF7DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA9EE181565BC9A002FF7DE /* CoreGraphics.framework */; };
+		9AA9EE1F1565BC9B002FF7DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE1D1565BC9B002FF7DE /* InfoPlist.strings */; };
+		9AA9EE211565BC9B002FF7DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EE201565BC9B002FF7DE /* main.m */; };
+		9AA9EE251565BC9B002FF7DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EE241565BC9B002FF7DE /* AppDelegate.m */; };
+		9AA9EE281565BC9B002FF7DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EE271565BC9B002FF7DE /* ViewController.m */; };
+		9AA9EE2B1565BC9C002FF7DE /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE291565BC9C002FF7DE /* ViewController_iPhone.xib */; };
+		9AA9EE2E1565BC9C002FF7DE /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EE2C1565BC9C002FF7DE /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AA9EE101565BC9A002FF7DE /* DatePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA9EE141565BC9A002FF7DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AA9EE161565BC9A002FF7DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AA9EE181565BC9A002FF7DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AA9EE1C1565BC9B002FF7DE /* DatePlanner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DatePlanner-Info.plist"; sourceTree = "<group>"; };
+		9AA9EE1E1565BC9B002FF7DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA9EE201565BC9B002FF7DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AA9EE221565BC9B002FF7DE /* DatePlanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DatePlanner-Prefix.pch"; sourceTree = "<group>"; };
+		9AA9EE231565BC9B002FF7DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AA9EE241565BC9B002FF7DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AA9EE261565BC9B002FF7DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9AA9EE271565BC9B002FF7DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9AA9EE2A1565BC9C002FF7DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		9AA9EE2D1565BC9C002FF7DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AA9EE0D1565BC9A002FF7DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA9EE151565BC9A002FF7DE /* UIKit.framework in Frameworks */,
+				9AA9EE171565BC9A002FF7DE /* Foundation.framework in Frameworks */,
+				9AA9EE191565BC9A002FF7DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AA9EE051565BC98002FF7DE = {
+			isa = PBXGroup;
+			children = (
+				9AA9EE1A1565BC9A002FF7DE /* DatePlanner */,
+				9AA9EE131565BC9A002FF7DE /* Frameworks */,
+				9AA9EE111565BC9A002FF7DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AA9EE111565BC9A002FF7DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9EE101565BC9A002FF7DE /* DatePlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AA9EE131565BC9A002FF7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9EE141565BC9A002FF7DE /* UIKit.framework */,
+				9AA9EE161565BC9A002FF7DE /* Foundation.framework */,
+				9AA9EE181565BC9A002FF7DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AA9EE1A1565BC9A002FF7DE /* DatePlanner */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9EE231565BC9B002FF7DE /* AppDelegate.h */,
+				9AA9EE241565BC9B002FF7DE /* AppDelegate.m */,
+				9AA9EE261565BC9B002FF7DE /* ViewController.h */,
+				9AA9EE271565BC9B002FF7DE /* ViewController.m */,
+				9AA9EE291565BC9C002FF7DE /* ViewController_iPhone.xib */,
+				9AA9EE2C1565BC9C002FF7DE /* ViewController_iPad.xib */,
+				9AA9EE1B1565BC9B002FF7DE /* Supporting Files */,
+			);
+			path = DatePlanner;
+			sourceTree = "<group>";
+		};
+		9AA9EE1B1565BC9B002FF7DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9EE1C1565BC9B002FF7DE /* DatePlanner-Info.plist */,
+				9AA9EE1D1565BC9B002FF7DE /* InfoPlist.strings */,
+				9AA9EE201565BC9B002FF7DE /* main.m */,
+				9AA9EE221565BC9B002FF7DE /* DatePlanner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AA9EE0F1565BC9A002FF7DE /* DatePlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA9EE311565BC9C002FF7DE /* Build configuration list for PBXNativeTarget "DatePlanner" */;
+			buildPhases = (
+				9AA9EE0C1565BC9A002FF7DE /* Sources */,
+				9AA9EE0D1565BC9A002FF7DE /* Frameworks */,
+				9AA9EE0E1565BC9A002FF7DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatePlanner;
+			productName = DatePlanner;
+			productReference = 9AA9EE101565BC9A002FF7DE /* DatePlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AA9EE071565BC98002FF7DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9AA9EE0A1565BC98002FF7DE /* Build configuration list for PBXProject "DatePlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AA9EE051565BC98002FF7DE;
+			productRefGroup = 9AA9EE111565BC9A002FF7DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AA9EE0F1565BC9A002FF7DE /* DatePlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AA9EE0E1565BC9A002FF7DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA9EE1F1565BC9B002FF7DE /* InfoPlist.strings in Resources */,
+				9AA9EE2B1565BC9C002FF7DE /* ViewController_iPhone.xib in Resources */,
+				9AA9EE2E1565BC9C002FF7DE /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AA9EE0C1565BC9A002FF7DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA9EE211565BC9B002FF7DE /* main.m in Sources */,
+				9AA9EE251565BC9B002FF7DE /* AppDelegate.m in Sources */,
+				9AA9EE281565BC9B002FF7DE /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AA9EE1D1565BC9B002FF7DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA9EE1E1565BC9B002FF7DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AA9EE291565BC9C002FF7DE /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA9EE2A1565BC9C002FF7DE /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		9AA9EE2C1565BC9C002FF7DE /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA9EE2D1565BC9C002FF7DE /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AA9EE2F1565BC9C002FF7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AA9EE301565BC9C002FF7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AA9EE321565BC9C002FF7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatePlanner/DatePlanner-Prefix.pch";
+				INFOPLIST_FILE = "DatePlanner/DatePlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9AA9EE331565BC9C002FF7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatePlanner/DatePlanner-Prefix.pch";
+				INFOPLIST_FILE = "DatePlanner/DatePlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AA9EE0A1565BC98002FF7DE /* Build configuration list for PBXProject "DatePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA9EE2F1565BC9C002FF7DE /* Debug */,
+				9AA9EE301565BC9C002FF7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA9EE311565BC9C002FF7DE /* Build configuration list for PBXNativeTarget "DatePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA9EE321565BC9C002FF7DE /* Debug */,
+				9AA9EE331565BC9C002FF7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AA9EE071565BC98002FF7DE /* Project object */;
+}
