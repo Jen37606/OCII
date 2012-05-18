@@ -17,7 +17,11 @@
 @interface AddEventScreen : UIViewController <UITextFieldDelegate>
 {
     id<AddEventScreenDelegate> delegate;
+    IBOutlet UIDatePicker *datePicker;
+    IBOutlet UITextField *eventField;
 }
+-(IBAction)closeKeyboard:(id)sender;
+-(IBAction)onClose:(id)sender;
 
 @property (strong) id<AddEventScreenDelegate> delegate;
 
