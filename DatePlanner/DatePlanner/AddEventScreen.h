@@ -19,6 +19,7 @@
     id<AddEventScreenDelegate> delegate;
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UITextField *eventField;
+    UIAlertView *errorCheck;
 }
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)onClose:(id)sender;

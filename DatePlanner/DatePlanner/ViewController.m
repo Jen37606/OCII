@@ -33,8 +33,18 @@
     }
 }
 
-
-
+// Show event when going back to main screen
+-(void)DidEnd:(NSString *)inputString
+{
+    [eventArray addObject:inputString];
+    
+    NSMutableString *temp = [[NSMutableString alloc] init];
+    for (NSString *element in eventArray)
+    {
+        [temp appendString:element];
+    }
+    eventText.text = temp;
+}
 
 
 

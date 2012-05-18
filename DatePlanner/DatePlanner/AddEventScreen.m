@@ -20,10 +20,37 @@
     return self;
 }
 
+
+// Close keyboard button
 -(IBAction)closeKeyboard:(id)sender
 {
     [self.view endEditing:true];
 }
+
+//Save the event and date from datepicker
+-(IBAction)onClose:(id)sender
+{
+    if (delegate != nil)
+    {
+        if (eventField.text.length == 0)
+        {
+            [errorCheck show];
+        } else {
+            NSDate *inputDate = datePicker.date;
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            [dateFormat setDateFormat:@"cccc, MMM d, hh:mm aa"];
+            NSString *dateString = [dateFormat stringFromDate:inputDate];
+            
+            NSString *eventAndDate = [NSString stringWithFormat:@"New Event: %@\n%@\n\n",eventField.text,dateString];
+            [delegate DidEnd:eventAndDate];
+            
+        }
+    }
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -46,6 +73,9 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    NSDate *todaysDate = [NSDate date];
+    datePicker.minimumDate=todaysDate;
+    errorCheck = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Enter an event please" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [super viewDidLoad];
 }
 
