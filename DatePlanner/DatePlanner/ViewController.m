@@ -23,9 +23,24 @@
 
 
 
+// Button to go to AddEventScreen
+-(IBAction)onClick:(id)sender
+{
+    AddEventScreen *addScreen = [[AddEventScreen alloc] initWithNibName:@"AddEvent" bundle:nil];
+    if (addScreen != nil) {
+        addScreen.delegate = self;
+        [self presentModalViewController:addScreen animated:YES];
+    }
+}
+
+
+
+
+
 
 - (void)viewDidLoad
 {
+    eventArray = [[NSMutableArray alloc] init];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

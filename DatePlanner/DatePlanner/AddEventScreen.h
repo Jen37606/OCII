@@ -14,6 +14,11 @@
 
 @end
 
-@interface AddEventScreen : UIViewController
+@interface AddEventScreen : UIViewController <UITextFieldDelegate>
+{
+    id<AddEventScreenDelegate> delegate;
+}
+
+@property (strong) id<AddEventScreenDelegate> delegate;
 
 @end

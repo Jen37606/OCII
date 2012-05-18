@@ -9,6 +9,7 @@
 #import "AddEventScreen.h"
 
 @implementation AddEventScreen
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
