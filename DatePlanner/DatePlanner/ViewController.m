@@ -33,6 +33,19 @@
     }
 }
 
+//Right Swipe
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
+{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+    
+    }
+    else if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
+    {
+    
+    }
+}
+
 // Show event when going back to main screen
 -(void)DidEnd:(NSString *)inputString
 {
@@ -64,6 +77,15 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:rightSwiper];
+    
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLabel addGestureRecognizer:leftSwiper];
+
+    
     [super viewWillAppear:animated];
 }
 

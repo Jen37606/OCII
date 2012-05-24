@@ -12,7 +12,11 @@
 @interface ViewController : UIViewController <AddEventScreenDelegate>
 {
     IBOutlet UITextView *eventText;
+    IBOutlet UILabel *swipeLabel;
     NSMutableArray *eventArray;
+    
+    UISwipeGestureRecognizer *rightSwiper;
+    UISwipeGestureRecognizer *leftSwiper;
 }
 
 -(IBAction)onClick:(id)sender;
