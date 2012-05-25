@@ -24,7 +24,6 @@
     UIAlertView *errorCheck;
 }
 -(IBAction)closeKeyboard:(id)sender;
--(IBAction)onSave:(id)sender;
 
 @property (strong) id<AddEventScreenDelegate> delegate;
 

@@ -25,20 +25,14 @@
 -(IBAction)onClick:(id)sender
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *loadSaved = eventText.text;
-    [defaults setValue:loadSaved forKey:@"savedEvents"];
-    [defaults synchronize];
-    
-    if ((eventText.text.length == 0)||([eventText.text isEqualToString:@"Empty!"]))
+    if (defaults != nil)
     {
-        UIAlertView *showAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"You need to add an Event to save data!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [showAlert show];
+        NSString *eventList = eventText.text;
+        [defaults setObject:eventList forKey:@"myList"];
+        
+        [defaults synchronize];
     }
-    else
-    {
-        UIAlertView *showAlert2 = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Data has been saved." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [showAlert2 show];
-    }
+    [self alertViewFunction:@"Events were saved."];
 }
 
 
@@ -55,8 +49,7 @@
     }
 }
 
-// Show event when going back to main screen
--(void)DidEnd:(NSString *)inputString
+-(void)didEnd:(NSString*)inputString
 {
     [eventArray addObject:inputString];
     
@@ -69,24 +62,23 @@
 }
 
 
--(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
-{
-    eventText.text = [NSString stringWithString:@""];
-    return true;
-}
-
-
 - (void)viewDidLoad
 {
-    //eventArray = [[NSMutableArray alloc] init];
+    eventArray = [[NSMutableArray alloc] init];
+    
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:rightSwiper];
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if(defaults !=nil){
-        NSString *loadSaved = [defaults stringForKey:@"AddEvent"];
-        if(loadSaved.length >0)
+    if (defaults != nil)
+    {
+        NSString *myList = [defaults objectForKey:@"myList"];
+        eventText.text = myList;
+        if (eventText.text.length == 0)
         {
-            eventText.text = loadSaved;
-        }       
-        
+            eventText.text = @"Add Events Below!";
+        }
     }
     
     [super viewDidLoad];

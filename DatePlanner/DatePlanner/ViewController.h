@@ -16,10 +16,8 @@
     NSMutableArray *eventArray;
     
     UISwipeGestureRecognizer *rightSwiper;
-    UISwipeGestureRecognizer *leftSwiper;
 }
 
 -(IBAction)onClick:(id)sender;
-
 
 @end
