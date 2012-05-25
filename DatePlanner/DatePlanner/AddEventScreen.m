@@ -27,6 +27,7 @@
     [self.view endEditing:true];
 }
 
+/*
 //Save the event and date from datepicker
 -(IBAction)onClose:(id)sender
 {
@@ -48,8 +49,28 @@
     }
     [self dismissModalViewControllerAnimated:YES];
 }
+*/
 
-
+-(void)onSwipe: (UISwipeGestureRecognizer*)recognizer
+{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
+        if(delegate != nil)
+        {
+            if(eventField.text.length == 0)
+            {
+                [errorCheck show];
+            }else{
+                NSDate *inputDate = datePicker.date;
+                NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+                [dateFormat setDateFormat:@"cccc, MMM d, hh:mm aa"];
+                NSString *dateString = [dateFormat stringFromDate:inputDate];
+                
+                NSString *eventAndDate = [NSString stringWithFormat:@"New Event: %@\n%@\n\n",eventField.text,dateString]; 
+                [delegate DidEnd:eventAndDate];
+            }
+            [self dismissModalViewControllerAnimated:YES];
+        }
+}    
 
 
 - (void)didReceiveMemoryWarning
@@ -70,12 +91,10 @@
 */
 
 
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    NSDate *todaysDate = [NSDate date];
-    datePicker.minimumDate=todaysDate;
-    errorCheck = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Enter an event please" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [super viewDidLoad];
 }
 
@@ -85,6 +104,19 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSDate *todaysDate = [NSDate date];
+    datePicker.minimumDate=todaysDate;
+    errorCheck = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Enter an event please" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLeft addGestureRecognizer:leftSwiper];
+    
+    [super viewDidAppear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -19,10 +19,12 @@
     id<AddEventScreenDelegate> delegate;
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UITextField *eventField;
+    IBOutlet UILabel *swipeLeft;
+    UISwipeGestureRecognizer *leftSwiper;
     UIAlertView *errorCheck;
 }
 -(IBAction)closeKeyboard:(id)sender;
--(IBAction)onClose:(id)sender;
+-(IBAction)onSave:(id)sender;
 
 @property (strong) id<AddEventScreenDelegate> delegate;
 
