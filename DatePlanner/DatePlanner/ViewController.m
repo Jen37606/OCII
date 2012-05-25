@@ -21,18 +21,25 @@
 
 
 
-
-/*
-// Button to go to AddEventScreen
+// Button to go to Save
 -(IBAction)onClick:(id)sender
 {
-    AddEventScreen *addScreen = [[AddEventScreen alloc] initWithNibName:@"AddEvent" bundle:nil];
-    if (addScreen != nil) {
-        addScreen.delegate = self;
-        [self presentModalViewController:addScreen animated:YES];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *loadSaved = eventText.text;
+    [defaults setValue:loadSaved forKey:@"savedEvents"];
+    [defaults synchronize];
+    
+    if ((eventText.text.length == 0)||([eventText.text isEqualToString:@"Empty!"]))
+    {
+        UIAlertView *showAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"You need to add an Event to save data!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [showAlert show];
+    }
+    else
+    {
+        UIAlertView *showAlert2 = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Data has been saved." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [showAlert2 show];
     }
 }
-*/
 
 
 //Right Swipe
@@ -62,10 +69,26 @@
 }
 
 
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    eventText.text = [NSString stringWithString:@""];
+    return true;
+}
+
 
 - (void)viewDidLoad
 {
-    eventArray = [[NSMutableArray alloc] init];
+    //eventArray = [[NSMutableArray alloc] init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(defaults !=nil){
+        NSString *loadSaved = [defaults stringForKey:@"AddEvent"];
+        if(loadSaved.length >0)
+        {
+            eventText.text = loadSaved;
+        }       
+        
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
