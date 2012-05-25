@@ -22,7 +22,7 @@
 
 
 
-
+/*
 // Button to go to AddEventScreen
 -(IBAction)onClick:(id)sender
 {
@@ -32,17 +32,19 @@
         [self presentModalViewController:addScreen animated:YES];
     }
 }
+*/
+
 
 //Right Swipe
--(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-    
-    }
-    else if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
-    {
-    
+        AddEventScreen *addScreen = [[AddEventScreen alloc] initWithNibName:@"AddEvent" bundle:nil];
+        if (addScreen != nil) {
+            addScreen.delegate = self;
+            [self presentModalViewController:addScreen animated:YES];
+        }
     }
 }
 
@@ -76,21 +78,16 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
-{
-    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe)];
-    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
-    [swipeLabel addGestureRecognizer:rightSwiper];
-    
-    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe)];
-    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
-    [swipeLabel addGestureRecognizer:leftSwiper];
-
-    
+{    
     [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:rightSwiper];
+
     [super viewDidAppear:animated];
 }
 
